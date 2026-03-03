@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamlit: Bed Time - Support</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: linear-gradient(135deg, #09090b 0%, #1e1b4b 50%, #312e81 100%);
+            min-height: 100vh;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            font-size: 48px;
+            font-weight: 800;
+            background: linear-gradient(135deg, #c4b5fd 0%, #818cf8 50%, #4f46e5 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .tagline {
+            color: #a5b4fc;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 40px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6);
+        }
+
+        h2 {
+            color: #e0e7ff;
+            font-size: 28px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        p {
+            color: #cbd5e1;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+
+        .contact-email {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+            color: #ffffff;
+            padding: 16px 32px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+        }
+
+        .contact-email:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 20px 40px -5px rgba(99, 102, 241, 0.5);
+        }
+
+        .faq-item {
+            margin-bottom: 30px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            padding: 24px;
+        }
+
+        .faq-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-question {
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .faq-question::before {
+            content: "Q";
+            background: rgba(99, 102, 241, 0.2);
+            color: #818cf8;
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .faq-answer {
+            color: #94a3b8;
+            line-height: 1.7;
+            padding-left: 35px;
+        }
+
+        ul.requirements {
+            list-style-type: none;
+            color: #94a3b8;
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        ul.requirements li {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 12px 16px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        ul.requirements li::before {
+            content: "•";
+            color: #818cf8;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            padding: 40px 0;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #818cf8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        footer a:hover {
+            color: #c4b5fd;
+        }
+
+        .links {
+            margin-top: 16px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 16px;
+            }
+
+            .logo {
+                font-size: 40px;
+            }
+
+            .card {
+                padding: 24px;
+            }
+
+            .faq-item {
+                padding: 20px;
+            }
+
+            .faq-question {
+                font-size: 16px;
+            }
+
+            ul.requirements {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-email {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Dreamlit: Bed Time</div>
+            <p class="tagline">Magical Bedtime Stories & Soothing Sounds</p>
+        </header>
+
+        <div class="card">
+            <h2>Contact Support</h2>
+            <p>Need help with Dreamlit? We are here to ensure your little ones have the most peaceful bedtime experience possible. Please don't hesitate to reach out if you encounter any issues or have questions.</p>
+            <div style="text-align: center;">
+                <a href="mailto:lokman782782@gmail.com" class="contact-email">
+                    lokman782782@gmail.com
+                </a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <p class="faq-question">Can I play stories without an internet connection?</p>
+                <p class="faq-answer">Yes! Stories are cached on your device exactly for this reason. Once you've downloaded/played a story or sound while connected, you can safely put your device in airplane mode for bedtime reading.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">Is the app safe for my child to use?</p>
+                <p class="faq-answer">Dreamlit is built with safety as our highest priority. All settings, payments, and external links are strictly protected behind a parental gate to ensure children cannot accidentally make purchases or leave the app.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">How does the Sleep Timer work?</p>
+                <p class="faq-answer">The sleep timer gently fades out audio and pauses playback after your chosen duration. This prevents the app from running all night and helps ease the transition to deep sleep.</p>
+            </div>
+
+            <div class="faq-item">
+                <p class="faq-question">The audio is suddenly not working or skipping.</p>
+                <p class="faq-answer">This is usually resolved by a fresh start. Try double-tapping your home button/swiping up and closing Dreamlit completely. Reopen the app. Also, ensure your iOS device is not set to "Silent Mode" (the physical switch on the side of older iPhones).</p>
+            </div>
+            
+            <div class="faq-item">
+                <p class="faq-question">How do I cancel my subscription?</p>
+                <p class="faq-answer">All subscriptions are managed directly by Apple. Go to your iPhone Settings > [Your Name] > Subscriptions > Dreamlit > Cancel Subscription.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>How to get faster help</h2>
+            <p>To help us resolve your issue as quickly as possible, please include the following details when you email our support team:</p>
+            <ul class="requirements">
+                <li>Your iPhone/iPad model</li>
+                <li>Your current iOS version</li>
+                <li>The specific story (if applicable)</li>
+                <li>Screenshot or screen recording</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Dreamlit &copy; <span id="year"></span>. Crafted with care for peaceful nights.</p>
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </footer>
+    </div>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
