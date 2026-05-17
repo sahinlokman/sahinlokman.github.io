@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy - GodLooks</title>
+    <meta name="description" content="Privacy Policy for GodLooks, an AI selfie glow-up app.">
+    <style>
+        :root {
+            --bg: #09090b;
+            --panel: #121216;
+            --panel-soft: #17171d;
+            --text: #fafafa;
+            --muted: #b6b6c2;
+            --subtle: #858594;
+            --line: rgba(255, 255, 255, 0.12);
+            --accent: #f5d56e;
+            --accent-2: #f5a8bd;
+            --max: 880px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 20% 0%, rgba(245, 213, 110, 0.16), transparent 30%),
+                radial-gradient(circle at 80% 10%, rgba(245, 168, 189, 0.14), transparent 32%),
+                var(--bg);
+            line-height: 1.65;
+        }
+
+        main {
+            width: min(var(--max), calc(100% - 32px));
+            margin: 0 auto;
+            padding: 56px 0 72px;
+        }
+
+        header {
+            padding: 32px 0 28px;
+            border-bottom: 1px solid var(--line);
+            margin-bottom: 28px;
+        }
+
+        .eyebrow {
+            margin: 0 0 10px;
+            color: var(--accent);
+            font-size: 0.82rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: clamp(2.1rem, 7vw, 4.5rem);
+            line-height: 1;
+            letter-spacing: 0;
+        }
+
+        .updated {
+            margin: 18px 0 0;
+            color: var(--subtle);
+            font-size: 0.96rem;
+        }
+
+        section {
+            padding: 26px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        h2 {
+            margin: 0 0 12px;
+            font-size: 1.28rem;
+            line-height: 1.25;
+        }
+
+        h3 {
+            margin: 22px 0 8px;
+            color: var(--accent-2);
+            font-size: 1rem;
+        }
+
+        p {
+            margin: 0 0 12px;
+            color: var(--muted);
+        }
+
+        ul {
+            margin: 10px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin: 10px 0;
+            color: var(--muted);
+        }
+
+        li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0.68em;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        }
+
+        strong {
+            color: var(--text);
+            font-weight: 700;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .notice {
+            margin: 24px 0 4px;
+            padding: 18px;
+            background: var(--panel);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+        }
+
+        .notice p:last-child,
+        section p:last-child {
+            margin-bottom: 0;
+        }
+
+        footer {
+            padding-top: 30px;
+            color: var(--subtle);
+            font-size: 0.92rem;
+        }
+
+        @media (max-width: 640px) {
+            main {
+                padding-top: 32px;
+            }
+
+            section {
+                padding: 22px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <p class="eyebrow">GodLooks</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Effective Date: May 17, 2026 | Last Updated: May 17, 2026</p>
+    </header>
+
+    <section>
+        <h2>1. Introduction</h2>
+        <p>GodLooks ("we", "our", or "us") is an AI-powered mobile application that creates realistic selfie glow-up images from a selfie you choose to upload. This Privacy Policy explains what information we process, why we process it, how long it is kept, and the choices you have.</p>
+        <p>By using GodLooks, you agree to this Privacy Policy. If you do not agree, please do not use the app's AI generation features.</p>
+    </section>
+
+    <section>
+        <h2>2. Information We Process</h2>
+        <p>GodLooks is designed to minimize data collection. We do not collect location data, advertising identifiers, contact lists, or broad photo library data.</p>
+        <ul>
+            <li><strong>Selected selfie:</strong> The single selfie you explicitly choose in the app may contain face data. We process it only to generate the AI glow-up image you requested.</li>
+            <li><strong>Text prompt:</strong> The app sends a prompt describing the selected style and generation settings.</li>
+            <li><strong>Anonymous installation identifier:</strong> The app creates a random per-install identifier stored on your device and sent with API requests only for rate limiting and abuse prevention. It is not linked to your Apple ID or identity.</li>
+            <li><strong>Generated images and local history:</strong> Generated glow-up images, thumbnails, and the original selfie copy used for comparison may be stored locally on your device so you can view your history.</li>
+            <li><strong>Purchase information:</strong> Subscription purchases are handled by Apple. We use Apple's StoreKit status to unlock paid features.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Face Data and Selfie Processing</h2>
+        <p>Because your selected selfie may contain face data, we handle it only with your explicit action and consent.</p>
+
+        <h3>What face data is processed</h3>
+        <p>We process only the selfie you select inside GodLooks. The app does not scan your full photo library, does not access photos you did not select, and does not use the camera without your separate device-level permission.</p>
+
+        <h3>How face data is used</h3>
+        <ul>
+            <li><strong>AI glow-up generation only:</strong> Your selfie is used to create the requested AI-enhanced portrait while preserving your identity.</li>
+            <li><strong>No identification:</strong> We do not use face data for biometric identification, face recognition, authentication, profiling, or tracking.</li>
+            <li><strong>No advertising use:</strong> We do not use your selfie or face data for ads, analytics, or marketing profiles.</li>
+            <li><strong>No AI training:</strong> Your selfie, face data, prompts, and generated images are not used by us to train, improve, or fine-tune AI models.</li>
+        </ul>
+
+        <h3>Consent</h3>
+        <p>Before a selfie is transmitted for AI processing, GodLooks shows a face data and AI processing notice. If you decline, the selfie is not sent and the generation does not start. You can revoke consent in the app under Settings &gt; Privacy &amp; Consent, and GodLooks will ask again before the next generation.</p>
+    </section>
+
+    <section>
+        <h2>4. AI Processing Workflow</h2>
+        <p>When you start a generation after giving consent, GodLooks securely sends your selected selfie, prompt, and anonymous installation identifier through our Cloudflare Workers proxy to CreativeLabs, our AI image generation provider.</p>
+        <ul>
+            <li>Photos are compressed and transmitted over HTTPS.</li>
+            <li>Cloudflare Workers routes requests, applies basic request controls, and helps protect the API endpoint.</li>
+            <li>CreativeLabs processes the selfie to generate the requested GodLooks glow-up result.</li>
+            <li>The generated image is returned to the app and displayed on your device.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Retention and Deletion</h2>
+        <ul>
+            <li><strong>Processing servers:</strong> Your selfie and related request data are retained only for the duration of the generation request and are deleted after the result is delivered. This is typically seconds to minutes and no longer than necessary to complete the request.</li>
+            <li><strong>Local device history:</strong> Generated images and comparison data may be stored locally on your device for app history. GodLooks automatically purges local generation history older than 30 days.</li>
+            <li><strong>User control:</strong> You can delete local history in the app. Deleting the app also removes app-local data stored on the device.</li>
+            <li><strong>Subscriptions:</strong> App Store purchase records are managed by Apple under Apple's own retention practices.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>6. Third-Party Services</h2>
+        <p>GodLooks uses a limited set of service providers to operate the app.</p>
+        <ul>
+            <li><strong>CreativeLabs:</strong> Provides the AI image generation service used to create glow-up results from your selected selfie and prompt.</li>
+            <li><strong>Cloudflare Workers:</strong> Provides secure proxy, routing, and request protection for API traffic.</li>
+            <li><strong>Apple App Store and StoreKit:</strong> Processes in-app purchases, subscriptions, refunds, and purchase restoration.</li>
+        </ul>
+        <p>We do not sell your personal information or face data. We do not share face data with third parties other than the service providers needed to complete the generation request described above.</p>
+    </section>
+
+    <section>
+        <h2>7. Security</h2>
+        <p>We use HTTPS for data transmission, app-side request controls, and a Cloudflare Workers proxy to avoid exposing provider credentials in the app. Generated images are kept under your control on your device unless you choose to save or share them using iOS features.</p>
+    </section>
+
+    <section>
+        <h2>8. Children's Privacy</h2>
+        <p>GodLooks is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through the app, contact us and we will take appropriate action.</p>
+    </section>
+
+    <section>
+        <h2>9. Your Choices and Rights</h2>
+        <ul>
+            <li>You can choose not to use AI generation, in which case no selfie is transmitted for processing.</li>
+            <li>You can revoke face data consent in Settings &gt; Privacy &amp; Consent.</li>
+            <li>You can delete local generation history from the app.</li>
+            <li>You can manage or cancel subscriptions through your Apple account subscription settings.</li>
+            <li>You can contact us with privacy questions or deletion requests.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>10. AI-Generated Content Notice</h2>
+        <p>GodLooks generates artistic AI enhancements for entertainment and personal presentation purposes. Results are synthetic and may not reflect real-world appearance.</p>
+    </section>
+
+    <section>
+        <h2>11. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we make changes, we will post the updated policy on this page and update the "Last Updated" date.</p>
+    </section>
+
+    <section>
+        <h2>12. Contact Us</h2>
+        <p>For privacy questions, contact us at <a href="mailto:lokman782782@gmail.com">lokman782782@gmail.com</a>.</p>
+    </section>
+
+    <div class="notice">
+        <p><strong>Summary:</strong> GodLooks processes only the selfie you select, only after consent, only to generate the requested AI glow-up image. We do not use your face data for identification, tracking, advertising, or AI training.</p>
+    </div>
+
+    <footer>
+        &copy; 2026 GodLooks. All rights reserved.
+    </footer>
+</main>
+</body>
+</html>
